@@ -62,6 +62,7 @@ private extension PDFPreviewView.PDFPreviewVC {
         pdfLabel.layer.name = pdfLabelName
         view.addSubview(pdfLabel)
         pdfLabel.text = pdfContent
+        pdfLabel.numberOfLines = 0
     }
     
     func updateConstraints() {

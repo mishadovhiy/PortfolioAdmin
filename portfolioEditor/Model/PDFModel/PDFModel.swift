@@ -10,7 +10,8 @@ import Foundation
 struct PDFModel {
     func previewPDF() -> PDFOutput {
         let unparce = PDFUnparceModel(input: .init(skills: [
-            .init(key: "uikit", skills: ["uikit", "swiftui"])
+            .init(key: "uikit", skills: ["uikit", "swiftui"]),
+            .init(key: "other", skills: ["dsas"])
         ]))
         return unparce.results
     }
