@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State var viewModel:ContentViewModel = .init()
+struct HomeView: View {
+    @State var viewModel:HomeViewModel = .init()
     
     var body: some View {
         VStack {
@@ -24,5 +24,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeView()
 }

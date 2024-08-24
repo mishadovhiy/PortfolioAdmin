@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ContentViewModel {
+struct HomeViewModel {
     let pdfBackgroundAlphaComponent:CGFloat = 0.3
     var pdfContent:String {
         pdfModel.previewPDF().resultString
