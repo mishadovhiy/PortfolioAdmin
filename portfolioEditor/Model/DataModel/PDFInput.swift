@@ -6,9 +6,9 @@
 //
 
 import Foundation
-//codable - to convert to dict when unparcing
+
 struct PDFInput {
-    //indeed dict
+
     let skills:[SkillListItem]
     
     var dictionary:[[String : Any]] {

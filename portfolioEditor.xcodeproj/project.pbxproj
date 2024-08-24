@@ -96,9 +96,9 @@
 		8D03389D2C7A1891002F1FAC /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				8D0338A72C7A1D6C002F1FAC /* SkillListItem.swift */,
 				8D03389B2C7A188A002F1FAC /* PDFPreviewItem.swift */,
 				8D03389F2C7A1996002F1FAC /* PDFInput.swift */,
-				8D0338A72C7A1D6C002F1FAC /* SkillListItem.swift */,
 				8D0338A52C7A1ACA002F1FAC /* PDFOutput.swift */,
 			);
 			path = DataModel;

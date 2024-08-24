@@ -7,8 +7,6 @@
 
 import Foundation
 
-/// displey string
-/// generate pdf from Self
 struct PDFPreviewItem {
     let contentString:NSAttributedString
     var canPress = false
