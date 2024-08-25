@@ -12,7 +12,7 @@ struct HomeView: View {
     @State var image:UIImage? = nil
     var body: some View {
         VStack {
-          AttributedStringView(pdfContent: viewModel.pdfContent)
+            AttributedStringView(pdfContent: viewModel.pdfContent)
           //  Image(uiImage: image ?? .init())
         }
         .padding()
@@ -25,7 +25,7 @@ struct HomeView: View {
                 ]))).view
                 view?.frame = .init(origin: .zero, size: .init(width: 600, height: 800))
                 self.image = view?.toImage
-
+                self.viewModel.viewAppeared()
             }
         }
     }
