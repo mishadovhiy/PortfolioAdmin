@@ -8,7 +8,7 @@
 import Foundation
 
 struct PDFInput {
-
+    let pageWidth:CGFloat
     let skills:[SkillListItem]
     
     var dictionary:[[String : Any]] {

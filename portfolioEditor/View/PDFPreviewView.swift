@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct PDFPreviewView: UIViewControllerRepresentable {
-    var pdfContent: String
+    var pdfContent: NSAttributedString
 
     func makeUIViewController(context: Context) -> PDFPreviewVC {
         return PDFPreviewVC(pdfContent: pdfContent)
@@ -22,9 +22,9 @@ struct PDFPreviewView: UIViewControllerRepresentable {
 
 extension PDFPreviewView {
     class PDFPreviewVC:UIViewController {
-        var pdfContent: String = "" {
+        var pdfContent: NSAttributedString = .init(string: "") {
             didSet {
-                pdfLabel?.text = pdfContent
+                pdfLabel?.attributedText = pdfContent
             }
         }
         private var pdfLabel:UILabel? {
@@ -37,7 +37,7 @@ extension PDFPreviewView {
             loadUI()
         }
         
-        init(pdfContent: String) {
+        init(pdfContent: NSAttributedString) {
             self.pdfContent = pdfContent
             super.init(nibName: nil, bundle: nil)
         }
@@ -61,7 +61,7 @@ private extension PDFPreviewView.PDFPreviewVC {
         let pdfLabel = UILabel()
         pdfLabel.layer.name = pdfLabelName
         view.addSubview(pdfLabel)
-        pdfLabel.text = pdfContent
+        pdfLabel.attributedText = pdfContent
         pdfLabel.numberOfLines = 0
     }
     

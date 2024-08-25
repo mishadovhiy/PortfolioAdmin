@@ -9,8 +9,10 @@ import Foundation
 
 struct HomeViewModel {
     let pdfBackgroundAlphaComponent:CGFloat = 0.3
-    var pdfContent:String {
-        pdfModel.previewPDF().resultString
-    }
+    var pdfContent:NSAttributedString
     let pdfModel = PDFModel()
+    init() {
+        print("HomeViewModelHomeViewModel")
+        self.pdfContent = pdfModel.previewPDF().resultString
+    }
 }
