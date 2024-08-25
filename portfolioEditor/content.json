@@ -1,14 +1,67 @@
 {
     "skills": [
         {
-            "title":"ios",
+            "title":"Languages",
             "list":[
-                "some value", 
-                "some other value"
+                "Swift (4)", "Objective C (1)", 
+                "TypeScript (1)", "JavaScript (2)",
+                "PHP (0.5)", "SQL"
+            ]
+        },
+        {
+            "title":"API Integration",
+            "list":[
+                "RESTful API", "WebRTC",
+                "MySQL", "Soap", "JSON",
+                "XML", "Protocol Buffers"
             ]
         }
     ],
-    "work_experience":{
-        "company_name":"Black Rock Sourch"
-    }
+    "workExperience":{
+        "companyName":"Black Rock Sourch",
+        "workTitle":"iOS Developer",
+        "companyURL":"",
+        "projectURLList":[""],
+        "dateFrom":"",
+        "dateTo":"",
+        "skillList":"",
+        "descriptions":["Created application from scratch, to generate collages from stored images in FileManager"]
+    },
+    "cgProjectKeyList":["videoEditor", "budget"],
+    "projectList":[
+        { "key":"videoEditor",
+            "name":"Video Editor",
+            "description": "Add Text, Images, Song on video",
+            "ipa":"",
+            "appstore":"https://apps.apple.com/app/id6479946692",
+            "github":"https://github.com/mishadovhiy/videoEditor",
+            "date":"24 Mar, 2024",
+            "iconName": "videoEditor.png",
+            "installed":"1",
+            "show":"1"
+        },
+        {
+            "key":"budget",
+            "name":"Video Editor",
+            "description": "Add Text, Images, Song on video",
+            "ipa":"",
+            "appstore":"https://apps.apple.com/app/id6479946692",
+            "github":"https://github.com/mishadovhiy/videoEditor",
+            "date":"24 Mar, 2024",
+            "iconName": "videoEditor.png",
+            "installed":"1",
+            "show":"1"
+        }
+    ],
+    "projectSkillList":[
+        {
+            "projectKey":"draw",
+            "list":["UIKit","PensilKit", "ARKit", "SceneKit"]
+        },
+        {
+            "projectKey":"videoEditor",
+            "list":["UIKit","PensilKit", "ARKit", "SceneKit"]
+        }
+    ]
+    
 }
