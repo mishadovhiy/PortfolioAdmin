@@ -8,7 +8,7 @@
 import SwiftUI
 import UIKit
 
-struct PDFPreviewView: UIViewControllerRepresentable {
+struct AttributedStringView: UIViewControllerRepresentable {
     var pdfContent: NSAttributedString
 
     func makeUIViewController(context: Context) -> PDFPreviewVC {
@@ -20,7 +20,7 @@ struct PDFPreviewView: UIViewControllerRepresentable {
     }
 }
 
-extension PDFPreviewView {
+extension AttributedStringView {
     class PDFPreviewVC:UIViewController {
         var pdfContent: NSAttributedString = .init(string: "") {
             didSet {
@@ -48,7 +48,7 @@ extension PDFPreviewView {
     }
 }
 
-private extension PDFPreviewView.PDFPreviewVC {
+private extension AttributedStringView.PDFPreviewVC {
     func loadUI() {
         loadPDFLabel()
         updateConstraints()

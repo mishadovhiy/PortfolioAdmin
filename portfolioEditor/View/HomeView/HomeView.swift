@@ -12,8 +12,8 @@ struct HomeView: View {
     @State var image:UIImage? = nil
     var body: some View {
         VStack {
-      //    PDFPreviewView(pdfContent: viewModel.pdfContent)
-            Image(uiImage: image ?? .init())
+          AttributedStringView(pdfContent: viewModel.pdfContent)
+          //  Image(uiImage: image ?? .init())
         }
         .padding()
         .onAppear {

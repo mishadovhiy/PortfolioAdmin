@@ -65,7 +65,7 @@ fileprivate extension PDFModel.PDFUnparceModel {
 //        }
     //   return string
         let page = UIHostingController(rootView: PDFGeneratorView(pdfInput: input))
-        page.view.frame = .init(origin: .zero, size: .init(width: 200, height: 300))
+        page.view.frame = .init(origin: .zero, size: .init(width: 600, height: 800))
         print("fsd ", page.view.frame.size)
         let attachment = NSTextAttachment(image: page.view.toImage)
         attachment.bounds = .init(origin: .zero, size: .init(width: 600, height: 100))
