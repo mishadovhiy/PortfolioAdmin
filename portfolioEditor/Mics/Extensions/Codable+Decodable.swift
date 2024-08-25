@@ -20,7 +20,16 @@ extension Decodable {
 #if DEBUG
             print("error decoding db data ", error)
 #endif
-            return nil
+            do {
+                let decoder = JSONDecoder()
+                
+                return try decoder.decode(Self.self, from: from)
+            } catch {
+#if DEBUG
+            print("error2 decoding db data ", error)
+#endif
+                return nil
+            }
         }
     }
 }

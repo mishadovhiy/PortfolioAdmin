@@ -9,7 +9,7 @@ import SwiftUI
 struct PDFGeneratorViewModel {
     
 }
-struct PDFGeneratorView: View {
+struct PDFPresenterView: View {
     let pdfInput:PDFInput
     
     var body: some View {

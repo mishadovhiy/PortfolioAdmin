@@ -1,0 +1,14 @@
+{
+    "skills": [
+        {
+            "title":"ios",
+            "list":[
+                "some value", 
+                "some other value"
+            ]
+        }
+    ],
+    "work_experience":{
+        "company_name":"Black Rock Sourch"
+    }
+}

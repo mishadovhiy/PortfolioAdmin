@@ -10,4 +10,8 @@ import Foundation
 struct SkillListItem:Codable {
     let key:String
     let skills:[String]
+    enum CodingKeys:String, CodingKey {
+        case key = "title"
+        case skills = "list"
+    }
 }
