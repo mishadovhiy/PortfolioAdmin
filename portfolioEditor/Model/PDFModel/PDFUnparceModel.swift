@@ -21,7 +21,7 @@ extension PDFModel {
             self.input = input
         }
         
-        private var pageWidth:CGFloat = {
+        var pageWidth:CGFloat = {
             PDFModel.pageWidth
         }()
         
@@ -39,18 +39,14 @@ fileprivate extension PDFModel.PDFUnparceModel {
         ]
     }
     
-    var sectionTitleFont:UIFont {
-        .systemFont(ofSize: 24, weight: .semibold)
-    }
-    
     var body: NSAttributedString {
         if input.dictionary.isEmpty {
             return .init(string: "")
         }
         let page = UIHostingController(rootView: PDFPresenterView(pdfInput: input))
         page.view.frame = .init(origin: .zero, size:
-                .init(width: 400, height: 500))
-        page.view.backgroundColor = .blue
+                .init(width: input.pageWidth, height: 900))
+        page.view.backgroundColor = .blue.withAlphaComponent(0.1)
         let attachment = NSTextAttachment(image: page.view.toImage)
         attachment.bounds = .init(origin: .zero, size: page.view.frame.size)
         return .init(attachment: attachment)

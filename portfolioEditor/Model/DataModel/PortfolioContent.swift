@@ -58,7 +58,8 @@ extension PortfolioContent {
         let dateTo:String
         let skillList:String
         let descriptions:[String]
-        
+        let workType:String
+        let managementType:String
         var descriptionText:String {
             return descriptions.joined(separator: ", ")
         }

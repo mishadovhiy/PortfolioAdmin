@@ -15,11 +15,13 @@
     "workExperience":[{
         "companyName":"Black Rock Sourch",
         "workTitle":"iOS Developer",
+        "workType":"full-time",
+        "managementType":"Agile team",
         "companyURL":"",
         "projectURLList":[""],
-        "dateFrom":"",
-        "dateTo":"",
-        "skillList":"",
+        "dateFrom":"Jun 2022",
+        "dateTo":"Oct 2023",
+        "skillList":"UIKit, SwiftUI, WebRTC, Remote Notifications, integrating API (Protobuf), Combine, creating reusable UI, deeplinks, SpriteKit, CoreAnimation, CoreData, Keychain, ReactNative, bridge JavaScript and Swift, MVVM-C",
         "descriptions":["Created application from scratch, to generate collages from stored images in FileManager"]
     }],
     "cgProjectKeyList":["videoEditor", "budget"],

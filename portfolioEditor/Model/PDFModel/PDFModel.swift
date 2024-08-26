@@ -8,7 +8,7 @@
 import Foundation
 
 struct PDFModel {
-    static let pageWidth:CGFloat = 680
+    static let pageWidth:CGFloat = 300
     var content:PortfolioContent? = .configure(nil) {
         didSet {
             self.input = .init(pageWidth: PDFModel.pageWidth, content: content)
