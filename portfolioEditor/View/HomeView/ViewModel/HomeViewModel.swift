@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HomeViewModel {
+class HomeViewModel {
     let pdfBackgroundAlphaComponent:CGFloat = 0.3
    // var pdfOutput:PDFInput = .init(pageWidth: 0, content: nil)
     var pdfContent:NSAttributedString = .init()
@@ -26,7 +26,7 @@ struct HomeViewModel {
     }
     var output:PDFModel.PDFOutput?
     var exportData:Data?
-    mutating func viewAppeared() {
+    func viewAppeared() {
         pdfContent = pdfModel.previewPDF().resultString
         guard let url = Bundle.main.url(forResource: "content", withExtension: "json") else {
             return
@@ -47,10 +47,23 @@ struct HomeViewModel {
         }
     }
     
-    mutating func exportPdfPressed() {
+    func exportPdfPressed() {
         //exportPresenting = true
         if let data = pdfModel.exportPDF() {
             self.exportData = data
         }
+    }
+    
+    var uploadingContent = false
+    func uploadContent() {
+        uploadingContent = true
+
+        if let content = pdfModel.content {
+            let api = APIManager()
+            api.updateContent(content: content) {
+                self.uploadingContent = false
+            }
+        }
+       
     }
 }

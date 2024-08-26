@@ -12,16 +12,20 @@ struct HomeView: View {
 
     var body: some View {
         VStack {
-//            AttributedStringView(pdfContent: viewModel.pdfContent)
-//            HStack {
-//                Button("export") {
-//                    viewModel.exportPdfPressed()
-//                }
-//            }
+            //AttributedStringView(pdfContent: viewModel.pdfContent)
             if let output = viewModel.testDictionary {
                 DictionaryListEditorView(dictionary: output)
             } else {
                 NoDataView()
+            }
+            HStack {
+                Button("export") {
+                    viewModel.exportPdfPressed()
+                }
+                Button("upload") {
+                    viewModel.uploadContent()
+                }
+                .disabled(viewModel.uploadingContent)
             }
         }
         .padding()
