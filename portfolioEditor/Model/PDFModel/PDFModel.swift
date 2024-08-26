@@ -9,10 +9,13 @@ import Foundation
 
 struct PDFModel {
     static let pageWidth:CGFloat = 680
-    let input:PDFInput = .init(pageWidth: PDFModel.pageWidth, skills: [
-        .init(key: "uikit", skills: ["uikit", "swiftui"]),
-        .init(key: "other", skills: ["dsas"])
-    ])
+    var content:PortfolioContent = .init(skills: []) {
+        didSet {
+            self.input = .init(pageWidth: PDFModel.pageWidth, content: content)
+        }
+    }
+    var input:PDFInput = .init(pageWidth: PDFModel.pageWidth, content: .init(skills: []))
+
     func previewPDF() -> PDFOutput {
         let unparce = PDFUnparceModel(input: input)
         return unparce.results

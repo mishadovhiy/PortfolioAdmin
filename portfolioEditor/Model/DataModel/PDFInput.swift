@@ -9,11 +9,11 @@ import Foundation
 
 struct PDFInput {
     let pageWidth:CGFloat
-    let skills:[SkillListItem]
+    let content:PortfolioContent
     
     var dictionary:[[String : Any]] {
         do {
-            return try skills.compactMap {
+            return try content.skills.compactMap {
                 try $0.dictionary()
             }
         } catch {

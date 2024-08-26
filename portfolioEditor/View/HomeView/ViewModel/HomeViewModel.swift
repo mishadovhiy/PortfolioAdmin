@@ -10,7 +10,7 @@ import Foundation
 struct HomeViewModel {
     let pdfBackgroundAlphaComponent:CGFloat = 0.3
     var pdfContent:NSAttributedString = .init()
-    let pdfModel = PDFModel()
+    var pdfModel = PDFModel()
     
     mutating func viewAppeared() {
         pdfContent = pdfModel.previewPDF().resultString
@@ -19,9 +19,11 @@ struct HomeViewModel {
         }
         do {
             let data = try Data(contentsOf: url)
-            print(data.count, " tgerfwed")
-            let datad = PortfolioContent.configure(data)
-            print(datad, " gterfde")
+            if let content = PortfolioContent.configure(data) {
+                self.pdfModel.content = content
+                pdfContent = pdfModel.previewPDF().resultString
+                print(content, " gterfde")
+            }
         } catch {
             print(error, " rgrfed")
             return

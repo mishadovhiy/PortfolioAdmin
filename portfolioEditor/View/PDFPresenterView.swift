@@ -21,6 +21,9 @@ struct PDFPresenterView: View {
                 skills
             }
         }
+        .onAppear(perform: {
+            print(pdfInput.content.skills, " gterfwd")
+        })
         .padding(30)
         .background(.red)
     }
