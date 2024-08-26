@@ -26,6 +26,7 @@
 		8D7250452C7B80D10034E7AF /* PortfolioContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7250442C7B80D10034E7AF /* PortfolioContent.swift */; };
 		8D786DE62C7CD801006CA06D /* PDFPresenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DE52C7CD801006CA06D /* PDFPresenterViewModel.swift */; };
 		8D786DE92C7CFAAD006CA06D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DE82C7CFAAD006CA06D /* ActivityView.swift */; };
+		8D786DEB2C7D005A006CA06D /* DictionaryListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DEA2C7D005A006CA06D /* DictionaryListEditorView.swift */; };
 		8D7E971E2C6B3BC600B32E33 /* PDFPageGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E971D2C6B3BC500B32E33 /* PDFPageGeneration.swift */; };
 		8D7E97222C6B3C5600B32E33 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E97212C6B3C5600B32E33 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		8D7250442C7B80D10034E7AF /* PortfolioContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioContent.swift; sourceTree = "<group>"; };
 		8D786DE52C7CD801006CA06D /* PDFPresenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPresenterViewModel.swift; sourceTree = "<group>"; };
 		8D786DE82C7CFAAD006CA06D /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		8D786DEA2C7D005A006CA06D /* DictionaryListEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryListEditorView.swift; sourceTree = "<group>"; };
 		8D7E971D2C6B3BC500B32E33 /* PDFPageGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPageGeneration.swift; sourceTree = "<group>"; };
 		8D7E97212C6B3C5600B32E33 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				8D0338B42C7A41B4002F1FAC /* NoDataView.swift */,
+				8D786DEA2C7D005A006CA06D /* DictionaryListEditorView.swift */,
 				8D786DE82C7CFAAD006CA06D /* ActivityView.swift */,
 			);
 			path = Reusable;
@@ -304,6 +307,7 @@
 				8D786DE62C7CD801006CA06D /* PDFPresenterViewModel.swift in Sources */,
 				8D7250402C7AAAE10034E7AF /* UIView.swift in Sources */,
 				8D7E971E2C6B3BC600B32E33 /* PDFPageGeneration.swift in Sources */,
+				8D786DEB2C7D005A006CA06D /* DictionaryListEditorView.swift in Sources */,
 				8D0338A62C7A1ACA002F1FAC /* PDFOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,7 +12,8 @@ struct HomeViewModel {
    // var pdfOutput:PDFInput = .init(pageWidth: 0, content: nil)
     var pdfContent:NSAttributedString = .init()
     var pdfModel = PDFModel()
-
+    var testDictionary:[String:Any]?
+    
     var exportPresenting:Bool {
         get {
             exportData != nil
@@ -23,6 +24,7 @@ struct HomeViewModel {
             }
         }
     }
+    var output:PDFModel.PDFOutput?
     var exportData:Data?
     mutating func viewAppeared() {
         pdfContent = pdfModel.previewPDF().resultString
@@ -34,7 +36,9 @@ struct HomeViewModel {
             if let content = PortfolioContent.configure(data) {
                 self.pdfModel.content = content
              //   pdfOutput = .init(pageWidth: pdfModel.input.pageWidth, content: content)
-                pdfContent = pdfModel.previewPDF().resultString
+                self.output = pdfModel.previewPDF()
+                pdfContent = self.output?.resultString ?? .init(string: "")
+                self.testDictionary = try content.dictionary()
                 print(content, " gterfde")
             }
         } catch {
