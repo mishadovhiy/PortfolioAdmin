@@ -12,7 +12,7 @@
         "Tools": ["Xcode Instruments", "Debug view hierarchy", "Reality Converter", "Git", "Terminal", "Sketch", "Figma", "Sourcetree", "FileZilla", "SoapUI", "SublimeText", "Mamp", "Trello", "Jira", "Android Studio"],
        "Front-end skills": ["HTML/CSS", "jQuery", "WordPress"]
     },
-    "workExperience":{
+    "workExperience":[{
         "companyName":"Black Rock Sourch",
         "workTitle":"iOS Developer",
         "companyURL":"",
@@ -21,7 +21,7 @@
         "dateTo":"",
         "skillList":"",
         "descriptions":["Created application from scratch, to generate collages from stored images in FileManager"]
-    },
+    }],
     "cgProjectKeyList":["videoEditor", "budget"],
     "projectSkillList":{
         "draw":["UIKit","PensilKit", "ARKit", "SceneKit"],

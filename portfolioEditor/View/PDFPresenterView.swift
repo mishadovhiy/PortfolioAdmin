@@ -22,10 +22,10 @@ struct PDFPresenterView: View {
             }
         }
         .onAppear(perform: {
-            print(pdfInput.content.skills, " gterfwd")
+            print(pdfInput.content?.projectList, " gtrsfeda")
+            print(pdfInput.content?.skills, " gterfwd")
         })
         .padding(30)
-        .background(.red)
     }
     
     var topContent: some View {

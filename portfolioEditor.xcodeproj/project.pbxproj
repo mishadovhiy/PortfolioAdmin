@@ -17,7 +17,6 @@
 		8D0338A02C7A1996002F1FAC /* PDFInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D03389F2C7A1996002F1FAC /* PDFInput.swift */; };
 		8D0338A42C7A1A62002F1FAC /* PDFUnparceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0338A32C7A1A62002F1FAC /* PDFUnparceModel.swift */; };
 		8D0338A62C7A1ACA002F1FAC /* PDFOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0338A52C7A1ACA002F1FAC /* PDFOutput.swift */; };
-		8D0338A82C7A1D6C002F1FAC /* SkillListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0338A72C7A1D6C002F1FAC /* SkillListItem.swift */; };
 		8D0338B02C7A3FFB002F1FAC /* Codable+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0338AE2C7A3FFB002F1FAC /* Codable+Decodable.swift */; };
 		8D0338B52C7A41B4002F1FAC /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0338B42C7A41B4002F1FAC /* NoDataView.swift */; };
 		8D72503A2C7A879B0034E7AF /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7250392C7A879B0034E7AF /* UIFont.swift */; };
@@ -42,7 +41,6 @@
 		8D03389F2C7A1996002F1FAC /* PDFInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFInput.swift; sourceTree = "<group>"; };
 		8D0338A32C7A1A62002F1FAC /* PDFUnparceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFUnparceModel.swift; sourceTree = "<group>"; };
 		8D0338A52C7A1ACA002F1FAC /* PDFOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFOutput.swift; sourceTree = "<group>"; };
-		8D0338A72C7A1D6C002F1FAC /* SkillListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillListItem.swift; sourceTree = "<group>"; };
 		8D0338AE2C7A3FFB002F1FAC /* Codable+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Decodable.swift"; sourceTree = "<group>"; };
 		8D0338B42C7A41B4002F1FAC /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
 		8D7250392C7A879B0034E7AF /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
@@ -107,7 +105,7 @@
 		8D03389D2C7A1891002F1FAC /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				8D7250462C7B80E10034E7AF /* PortfolioContent */,
+				8D7250442C7B80D10034E7AF /* PortfolioContent.swift */,
 				8D03389B2C7A188A002F1FAC /* PDFPreviewItem.swift */,
 				8D03389F2C7A1996002F1FAC /* PDFInput.swift */,
 				8D0338A52C7A1ACA002F1FAC /* PDFOutput.swift */,
@@ -166,15 +164,6 @@
 				8D0338962C7A08E3002F1FAC /* AttributedStringView.swift */,
 			);
 			path = AttributedStringView;
-			sourceTree = "<group>";
-		};
-		8D7250462C7B80E10034E7AF /* PortfolioContent */ = {
-			isa = PBXGroup;
-			children = (
-				8D7250442C7B80D10034E7AF /* PortfolioContent.swift */,
-				8D0338A72C7A1D6C002F1FAC /* SkillListItem.swift */,
-			);
-			path = PortfolioContent;
 			sourceTree = "<group>";
 		};
 		8D7E971F2C6B3C3000B32E33 /* Model */ = {
@@ -291,7 +280,6 @@
 				8D72503A2C7A879B0034E7AF /* UIFont.swift in Sources */,
 				8D7250402C7AAAE10034E7AF /* UIView.swift in Sources */,
 				8D7E971E2C6B3BC600B32E33 /* PDFPageGeneration.swift in Sources */,
-				8D0338A82C7A1D6C002F1FAC /* SkillListItem.swift in Sources */,
 				8D0338A62C7A1ACA002F1FAC /* PDFOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
