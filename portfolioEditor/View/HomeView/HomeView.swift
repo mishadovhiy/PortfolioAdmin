@@ -13,12 +13,20 @@ struct HomeView: View {
     var body: some View {
         VStack {
             AttributedStringView(pdfContent: viewModel.pdfContent)
+            HStack {
+                Button("export") {
+                    viewModel.exportPdfPressed()
+                }
+            }
         }
         .padding()
         .onAppear {
             DispatchQueue.main.async {
                 self.viewModel.viewAppeared()
             }
+        }
+        .fullScreenCover(isPresented: $viewModel.exportPresenting) {
+            ActivityView(activityItems: [viewModel.exportData ?? .init()])
         }
     }
 }
