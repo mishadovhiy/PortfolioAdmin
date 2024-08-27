@@ -14,8 +14,17 @@ struct HomeView: View {
         VStack {
             //AttributedStringView(pdfContent: viewModel.pdfContent)
             VStack {
-                if let output = viewModel.testDictionary {
-                    DictionaryListEditorView(dictionary: output)
+                if let _ = viewModel.testDictionary {
+                    ScrollView(.vertical) {
+                        NavigationView {
+                            DictionaryListEditorView(dictionary: .init(get: {
+                                viewModel.testDictionary ?? [:]
+                            }, set: {
+                                print("superviewdictChanged")
+                                viewModel.testDictionary = $0
+                            }))
+                        }
+                    }
                 } else {
                     NoDataView()
                 }
