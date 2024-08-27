@@ -1,12 +1,12 @@
 {
     "skills": {
-       "Languages (years)": ["Swift (4)", "Objective C (1)", "TypeScript (1)", "JavaScript (2)", "PHP (0.5)", "SQL"],
+       "Languages (years)": ["Swift (4)", "Objective C (1)", "TypeScript", "JavaScript (2)", "PHP (1)", "SQL"],
        "APIs": ["RESTful API", "WebRTC", "Soap", "MySQL", "JSON", "XML", "Protocol Buffers"],
        "iOS SDK (years)": ["SwiftUI (2)", "UIKit (4)", "WatchKit", "Concurrency (async/await; GCD)", "CoreData", "Remote Notifications", "CoreGraphics", "CoreAnimation", "Cocoa Touch", "StoreKit", "Combine", "RxSwift", "Local Authentication", "deeplinks", "App Intents", "WatchConnectivity", "AVFoundation (1.5)", "CreateML", "CoreML", "PDFKit", "WidgetKit", "CoreText", "MapKit (0.5)", "WebKit", "CoreBluetooth", "SwiftData", "Vision", "SpriteKit (1)", "CoreMotion", "RealityKit (0.8)"],
        "Interface": ["SwiftUI", "Storyboards", "XIB", "Texture", "Code driven UI", "AutoLayout", "IBInspectable"],
        "Architectural patterns": ["MVVM+C", "VIPER", "MVP", "Clean Swift", "OOP principles", "DRY", "SOLID", "MVC"],
        "Data Storage": ["CoreData", "UserDefaults", "CloudKit", "FireBase", "Keychain", "FileManager"],
-       "Distribution & testing": ["App Store", "Enterprise (.ipa)", "TestFlight", "Unit Tests", "Provisioning profile", "Code signing", "Jenkins"],
+       "Distribution and testing": ["App Store", "Enterprise (.ipa)", "TestFlight", "Unit Tests", "Provisioning profile", "Code signing", "Jenkins"],
        "Version Control": ["git", "gitlab", "bitbucket"],
        "3rd party libraries":["CocoaPods", "SPM: integration & creation", "Firebase", "GoogleMobileAds", "FacebookSDK", "Lottie", "Alamofire", "SnapKit", "gcloud Services API", "OpenAI", "AppsFlyer"],
         "Tools": ["Xcode Instruments", "Debug view hierarchy", "Reality Converter", "Git", "Terminal", "Sketch", "Figma", "Sourcetree", "FileZilla", "SoapUI", "SublimeText", "Mamp", "Trello", "Jira", "Android Studio"],
@@ -217,7 +217,7 @@
         }
     ],
     "title":"iOS Developer",
-    "description":"Creating Apps and Libraries (4 years)</br></br>iOS, iPadOS, MacOS<br>UIKit, SwiftUI, SpriteKit, Cocoa, RealityKit, CoreML",
+    "description":"Creating Apps and Libraries (4,5 years)</br></br>iOS, iPadOS, MacOS<br>UIKit, SwiftUI, SpriteKit, Cocoa, RealityKit, CoreML",
     "about":"Swift Developer with 4 years of commercial experience in the full iOS client development lifecycle. Proven track record in integrating APIs, crafting reusable object-oriented components, and deploying apps to the App Store, or Enterprise (.ipa). Committed to creating iOS applications that prioritize efficiency and user- friendliness. Proficient in crafting intricate animations and custom screen transitions. Adheres to OOP principles, ensuring clean and maintainable code that scales with ease. Experienced in managing memory with ARC and Xcode Instruments to prevent memory leaks and improve app performance"
     
 }

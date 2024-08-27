@@ -39,7 +39,7 @@ class HomeViewModel {
                 self.output = pdfModel.previewPDF()
                 pdfContent = self.output?.resultString ?? .init(string: "")
                 self.testDictionary = try content.dictionary()
-                print(content, " gterfde")
+                print(self.testDictionary, " gterfde")
             }
         } catch {
             print(error, " rgrfed")
