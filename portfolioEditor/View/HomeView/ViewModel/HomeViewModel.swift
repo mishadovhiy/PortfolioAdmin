@@ -7,13 +7,12 @@
 
 import Foundation
 
-class HomeViewModel {
+struct HomeViewModel {
     let pdfBackgroundAlphaComponent:CGFloat = 0.3
    // var pdfOutput:PDFInput = .init(pageWidth: 0, content: nil)
     var pdfContent:NSAttributedString = .init()
     var pdfModel = PDFModel()
     var testDictionary:[String:Any]?
-    
     var exportPresenting:Bool {
         get {
             exportData != nil
@@ -26,7 +25,7 @@ class HomeViewModel {
     }
     var output:PDFModel.PDFOutput?
     var exportData:Data?
-    func viewAppeared() {
+    mutating func viewAppeared() {
         pdfContent = pdfModel.previewPDF().resultString
         guard let url = Bundle.main.url(forResource: "content", withExtension: "json") else {
             return
@@ -39,7 +38,6 @@ class HomeViewModel {
                 self.output = pdfModel.previewPDF()
                 pdfContent = self.output?.resultString ?? .init(string: "")
                 self.testDictionary = try content.dictionary()
-                print(self.testDictionary, " gterfde")
             }
         } catch {
             print(error, " rgrfed")
@@ -47,7 +45,7 @@ class HomeViewModel {
         }
     }
     
-    func exportPdfPressed() {
+    mutating func exportPdfPressed() {
         //exportPresenting = true
         if let data = pdfModel.exportPDF() {
             self.exportData = data
@@ -55,13 +53,14 @@ class HomeViewModel {
     }
     
     var uploadingContent = false
-    func uploadContent() {
+    mutating func uploadContent(completion:@escaping()->()) {
         uploadingContent = true
 
         if let content = pdfModel.content {
             let api = APIManager()
             api.updateContent(content: content) {
-                self.uploadingContent = false
+                completion()
+           //     self.uploadingContent = false
             }
         }
        

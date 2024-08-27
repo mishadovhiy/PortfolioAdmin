@@ -13,17 +13,21 @@ struct HomeView: View {
     var body: some View {
         VStack {
             //AttributedStringView(pdfContent: viewModel.pdfContent)
-            if let output = viewModel.testDictionary {
-                DictionaryListEditorView(dictionary: output)
-            } else {
-                NoDataView()
+            VStack {
+                if let output = viewModel.testDictionary {
+                    DictionaryListEditorView(dictionary: output)
+                } else {
+                    NoDataView()
+                }
             }
             HStack {
                 Button("export") {
                     viewModel.exportPdfPressed()
                 }
                 Button("upload") {
-                    viewModel.uploadContent()
+                    viewModel.uploadContent(completion: {
+                        self.viewModel.uploadingContent = false
+                    })
                 }
                 .disabled(viewModel.uploadingContent)
             }
