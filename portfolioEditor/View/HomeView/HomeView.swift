@@ -30,15 +30,18 @@ struct HomeView: View {
                 }
             }
             HStack {
+                Spacer()
                 Button("export") {
                     viewModel.exportPdfPressed()
                 }
+                Spacer()
                 Button("upload") {
                     viewModel.uploadContent(completion: {
                         self.viewModel.uploadingContent = false
                     })
                 }
                 .disabled(viewModel.uploadingContent)
+                Spacer()
             }
         }
         .padding()
