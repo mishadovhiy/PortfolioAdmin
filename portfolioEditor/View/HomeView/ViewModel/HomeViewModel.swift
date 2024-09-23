@@ -47,12 +47,25 @@ struct HomeViewModel {
         }
     }
     
-    mutating func viewAppeared() {
-        setContentFromBundle()
+    mutating func viewAppeared(completion:@escaping(_ response:PortfolioContent?)->()) {
+      //  setContentFromBundle()
         Task {
             APIManager().loadContent { response in
                 print(response, " tyhftgdfsd")
+                completion(response)
             }
+        }
+    }
+    
+    mutating func contentLoaded(_ response:PortfolioContent?) {
+        self.pdfModel.content = response
+     //   pdfOutput = .init(pageWidth: pdfModel.input.pageWidth, content: content)
+        self.output = pdfModel.previewPDF()
+        pdfContent = self.output?.resultString ?? .init(string: "")
+        do {
+            self.testDictionary = try response.dictionary()
+        } catch {
+            print("error unparcing to dictionary")
         }
     }
     
@@ -65,14 +78,26 @@ struct HomeViewModel {
     
     var uploadingContent = false
     mutating func uploadContent(completion:@escaping()->()) {
-        uploadingContent = true
+        do {
+            uploadingContent = true
+            let jsonData = try JSONSerialization.data(withJSONObject: testDictionary!, options: [])
 
-        if let content = pdfModel.content {
-            let api = APIManager()
-            api.updateContent(content: content) {
-                completion()
-           //     self.uploadingContent = false
+            let response = PortfolioContent.configure(jsonData)
+            
+            if response?.about ?? "" == "" {
+                fatalError()
             }
+            pdfModel.content = response
+
+            if let content = pdfModel.content {
+                let api = APIManager()
+                api.updateContent(content: content) {
+                    completion()
+                }
+            }
+        } catch {
+            print("error converting dict to data")
+            return
         }
        
     }

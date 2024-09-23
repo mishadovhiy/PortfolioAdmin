@@ -39,7 +39,7 @@ struct DictionaryListEditorView: View {
                                     self.pressedDictionaryKey = key
                                 }
                         } else {
-                            Text("unrecorded type")
+                            Text("unrecorded type \(key)")
                         }
                     }
                     .padding(.top, 10)

@@ -46,7 +46,9 @@ struct HomeView: View {
         }
         .padding()
         .onAppear {
-            viewModel.viewAppeared()
+            viewModel.viewAppeared(completion: {
+                self.viewModel.contentLoaded($0)
+            })
         }
         .fullScreenCover(isPresented: $viewModel.exportPresenting) {
             ActivityView(activityItems: [viewModel.exportData ?? .init()])
