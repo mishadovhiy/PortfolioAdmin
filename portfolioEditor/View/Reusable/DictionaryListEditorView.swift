@@ -38,6 +38,8 @@ struct DictionaryListEditorView: View {
                                 .onTapGesture {
                                     self.pressedDictionaryKey = key
                                 }
+                        } else if let dict = value as? [String:Any] {
+                            Text(key + " is dictionary: \(dict.count) keys")
                         } else {
                             Text("unrecorded type \(key)")
                         }

@@ -31,7 +31,7 @@ struct HomeView: View {
             }
             HStack {
                 Spacer()
-                Button("export") {
+                Button("export pdf") {
                     viewModel.exportPdfPressed()
                 }
                 Spacer()
