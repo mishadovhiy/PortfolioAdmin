@@ -25,7 +25,6 @@
 		8D72503A2C7A879B0034E7AF /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7250392C7A879B0034E7AF /* UIFont.swift */; };
 		8D72503C2C7A8AB50034E7AF /* PDFPresenterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72503B2C7A8AB50034E7AF /* PDFPresenterView.swift */; };
 		8D7250402C7AAAE10034E7AF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72503F2C7AAAE10034E7AF /* UIView.swift */; };
-		8D7250432C7B7FD80034E7AF /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D7250422C7B7FD80034E7AF /* content.json */; };
 		8D7250452C7B80D10034E7AF /* PortfolioContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7250442C7B80D10034E7AF /* PortfolioContent.swift */; };
 		8D786DE62C7CD801006CA06D /* PDFPresenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DE52C7CD801006CA06D /* PDFPresenterViewModel.swift */; };
 		8D786DE92C7CFAAD006CA06D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DE82C7CFAAD006CA06D /* ActivityView.swift */; };
@@ -56,7 +55,6 @@
 		8D7250392C7A879B0034E7AF /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		8D72503B2C7A8AB50034E7AF /* PDFPresenterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPresenterView.swift; sourceTree = "<group>"; };
 		8D72503F2C7AAAE10034E7AF /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		8D7250422C7B7FD80034E7AF /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 		8D7250442C7B80D10034E7AF /* PortfolioContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioContent.swift; sourceTree = "<group>"; };
 		8D786DE52C7CD801006CA06D /* PDFPresenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPresenterViewModel.swift; sourceTree = "<group>"; };
 		8D786DE82C7CFAAD006CA06D /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				8D0209AB2C61BFEE0061DD04 /* portfolioEditorApp.swift */,
-				8D7250422C7B7FD80034E7AF /* content.json */,
 				8D7E971F2C6B3C3000B32E33 /* Model */,
 				8D7E97202C6B3C3E00B32E33 /* View */,
 				8D0209AF2C61BFF00061DD04 /* Assets.xcassets */,
@@ -291,7 +288,6 @@
 			files = (
 				8D0209B42C61BFF00061DD04 /* Preview Assets.xcassets in Resources */,
 				8D0209B02C61BFF00061DD04 /* Assets.xcassets in Resources */,
-				8D7250432C7B7FD80034E7AF /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
