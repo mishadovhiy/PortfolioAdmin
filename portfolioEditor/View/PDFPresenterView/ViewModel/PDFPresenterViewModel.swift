@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import SwiftUICore
+import SwiftUI
+//import SwiftUICore
 
 extension PDFPresenterView {
     struct PDFPresenterViewModel {

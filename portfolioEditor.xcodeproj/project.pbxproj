@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82136AD32C86D622009ABBF4 /* privateKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82136AD22C86D622009ABBF4 /* privateKeys.swift */; };
 		8D0209AC2C61BFEE0061DD04 /* portfolioEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0209AB2C61BFEE0061DD04 /* portfolioEditorApp.swift */; };
 		8D0209AE2C61BFEE0061DD04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0209AD2C61BFEE0061DD04 /* HomeView.swift */; };
 		8D0209B02C61BFF00061DD04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0209AF2C61BFF00061DD04 /* Assets.xcassets */; };
@@ -29,13 +30,13 @@
 		8D786DE62C7CD801006CA06D /* PDFPresenterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DE52C7CD801006CA06D /* PDFPresenterViewModel.swift */; };
 		8D786DE92C7CFAAD006CA06D /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DE82C7CFAAD006CA06D /* ActivityView.swift */; };
 		8D786DEB2C7D005A006CA06D /* DictionaryListEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DEA2C7D005A006CA06D /* DictionaryListEditorView.swift */; };
-		8D786DED2C7D0B05006CA06D /* privateKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DEC2C7D0B05006CA06D /* privateKeys.swift */; };
 		8D786DEF2C7D0BB7006CA06D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D786DEE2C7D0BB7006CA06D /* APIManager.swift */; };
 		8D7E971E2C6B3BC600B32E33 /* PDFPageGeneration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E971D2C6B3BC500B32E33 /* PDFPageGeneration.swift */; };
 		8D7E97222C6B3C5600B32E33 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7E97212C6B3C5600B32E33 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		82136AD22C86D622009ABBF4 /* privateKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privateKeys.swift; sourceTree = "<group>"; };
 		8D0209A82C61BFEE0061DD04 /* portfolioEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = portfolioEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D0209AB2C61BFEE0061DD04 /* portfolioEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = portfolioEditorApp.swift; sourceTree = "<group>"; };
 		8D0209AD2C61BFEE0061DD04 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		8D786DE52C7CD801006CA06D /* PDFPresenterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPresenterViewModel.swift; sourceTree = "<group>"; };
 		8D786DE82C7CFAAD006CA06D /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		8D786DEA2C7D005A006CA06D /* DictionaryListEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryListEditorView.swift; sourceTree = "<group>"; };
-		8D786DEC2C7D0B05006CA06D /* privateKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = privateKeys.swift; sourceTree = "<group>"; };
 		8D786DEE2C7D0BB7006CA06D /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		8D7E971D2C6B3BC500B32E33 /* PDFPageGeneration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPageGeneration.swift; sourceTree = "<group>"; };
 		8D7E97212C6B3C5600B32E33 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 				8D0209AF2C61BFF00061DD04 /* Assets.xcassets */,
 				8D0338B32C7A402C002F1FAC /* Mics */,
 				8D0209B12C61BFF00061DD04 /* portfolioEditor.entitlements */,
-				8D786DEC2C7D0B05006CA06D /* privateKeys.swift */,
+				82136AD22C86D622009ABBF4 /* privateKeys.swift */,
 				8D0209B22C61BFF00061DD04 /* Preview Content */,
 			);
 			path = portfolioEditor;
@@ -305,6 +305,7 @@
 				8D3B7B4B2C7E132800A246B2 /* ArrayEditorView.swift in Sources */,
 				8D0338992C7A1769002F1FAC /* PDFModel.swift in Sources */,
 				8D0338B02C7A3FFB002F1FAC /* Codable+Decodable.swift in Sources */,
+				82136AD32C86D622009ABBF4 /* privateKeys.swift in Sources */,
 				8D7250452C7B80D10034E7AF /* PortfolioContent.swift in Sources */,
 				8D72503C2C7A8AB50034E7AF /* PDFPresenterView.swift in Sources */,
 				8D03389C2C7A188A002F1FAC /* PDFPreviewItem.swift in Sources */,
@@ -312,7 +313,6 @@
 				8D786DEF2C7D0BB7006CA06D /* APIManager.swift in Sources */,
 				8D0338972C7A08E3002F1FAC /* AttributedStringView.swift in Sources */,
 				8D3B7B492C7E006C00A246B2 /* TextEditorView.swift in Sources */,
-				8D786DED2C7D0B05006CA06D /* privateKeys.swift in Sources */,
 				8D0338A02C7A1996002F1FAC /* PDFInput.swift in Sources */,
 				8D7E97222C6B3C5600B32E33 /* HomeViewModel.swift in Sources */,
 				8D0338A42C7A1A62002F1FAC /* PDFUnparceModel.swift in Sources */,

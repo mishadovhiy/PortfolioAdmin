@@ -8,14 +8,6 @@
 import Foundation
 
 struct APIManager {
-    func loadContent(completion:@escaping(_ content:PortfolioContent?)->()) {
-        guard let url:URL = .init(string: PrivateKeys.contentURL.rawValue) else {
-            completion(nil)
-            return
-        }
-        var request = URLRequest(url: url)
-      //  let task = URLSession.shared.
-    }
     
     func updateContent(content:PortfolioContent, completion:@escaping()->()) {
         do {
@@ -29,7 +21,7 @@ struct APIManager {
                     completion()
                     return
                 }
-            guard let url:URL = .init(string: PrivateKeys.editorURL.rawValue + "?content=" + jsonString)
+            guard let url:URL = .init(string: PrivateKeys.editorURL.url + "?content=" + jsonString)
             else {
                 completion()
                 return
@@ -67,5 +59,28 @@ struct APIManager {
             print(error)
             completion()
         }
+    }
+    
+    func loadContent(completion:@escaping(PortfolioContent?)->()) {
+        guard let url:URL = .init(string: PrivateKeys.contentURL.url) else {
+            print("url error")
+            return
+        }
+        let task = URLSession.shared.dataTask(with: .init(url: url)) { data, response, error in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                print("Server error")
+                completion(nil)
+                return
+            }
+            completion(PortfolioContent.configure(data))
+        }
+        task.resume()
     }
 }

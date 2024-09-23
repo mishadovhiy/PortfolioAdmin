@@ -25,7 +25,9 @@ struct HomeViewModel {
     }
     var output:PDFModel.PDFOutput?
     var exportData:Data?
-    mutating func viewAppeared() {
+    
+    /// temporary test
+    mutating func setContentFromBundle() {
         pdfContent = pdfModel.previewPDF().resultString
         guard let url = Bundle.main.url(forResource: "content", withExtension: "json") else {
             return
@@ -42,6 +44,15 @@ struct HomeViewModel {
         } catch {
             print(error, " rgrfed")
             return
+        }
+    }
+    
+    mutating func viewAppeared() {
+        setContentFromBundle()
+        Task {
+            APIManager().loadContent { response in
+                print(response, " tyhftgdfsd")
+            }
         }
     }
     

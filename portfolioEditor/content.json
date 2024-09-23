@@ -39,9 +39,21 @@
         "recognition":["CoreML", "Vision", "JSON", "Wikipedia API", "MobileCoreServices", "CocoaPods"],
         "arTank":["UIKit", "RealityKit"],
         "health":["HealthKit", "UIKit", "CoreGraphics", "CoreAnimation", "CoreData", "xib", "MVVM-C"],
-        "AlertLib":["UIKit", "Package Manager"]
+        "AlertLib":["UIKit", "Package Manager"],
+        "aiPuzzle":["SwiftUI", "CoreGraphics", "StoreKit", "Local Notificatios", "OpenAI"]
     },
     "projectList":[
+        { "key":"aiPuzzle",
+            "name":"AI puzzle app",
+            "description": "Game to collect puzzles and generate puzzle from OpenAI request",
+            "ipa":"",
+            "appstore":"https://apps.apple.com/app/id6618149838",
+            "github":"",
+            "date":"16 Sep, 2024",
+            "iconName": "aiPuzzle.png",
+            "installed":"1",
+            "show":"1"
+        },
         { "key":"videoEditor",
             "name":"Video Editor",
             "description": "Add Text, Images, Song on video",
@@ -94,6 +106,17 @@
             "github":"",
             "date":"Mar, 2023",
             "iconName": "rocks.png",
+            "installed":"1",
+            "show":"1"
+        },
+        { "key":"draw",
+            "name":"Draw in Augmented Reality",
+            "description": "Place your drawings in AR",
+            "ipa":"",
+            "appstore":"https://apps.apple.com/app/id6483004426",
+            "github":"https://github.com/mishadovhiy/drawAR",
+            "date":"8 Apr, 2024",
+            "iconName": "drawAppIcon.png",
             "installed":"1",
             "show":"1"
         },
@@ -150,17 +173,6 @@
             "date":"Feb, 2022",
             "iconName": "createSymbolIcon.svg",
             "installed":"0",
-            "show":"1"
-        },
-        { "key":"draw",
-            "name":"Draw in Augmented Reality",
-            "description": "Place your drawings in AR",
-            "ipa":"",
-            "appstore":"https://apps.apple.com/app/id6483004426",
-            "github":"https://github.com/mishadovhiy/drawAR",
-            "date":"8 Apr, 2024",
-            "iconName": "drawAppIcon.png",
-            "installed":"1",
             "show":"1"
         },
         { "key":"rocketGame",

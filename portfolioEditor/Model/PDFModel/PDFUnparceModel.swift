@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-import SwiftUICore
+//import SwiftUICore
 import SwiftUI
 
 extension PDFModel {
@@ -51,11 +51,11 @@ fileprivate extension PDFModel.PDFUnparceModel {
     
     var skills:NSAttributedString {
         let text = """
-                .init(width: input.pageWidth, height: 900))
-        page.view.backgroundColor = .blue.withAlphaComponent(0.1)
-        let attachment = NSTextAttachment(image: page.view.toImage)
-        attachment.bounds = .init(origin: .zero, size: page.view.frame.size)
-        return .init(attachment: attachment)
+.init(width: input.pageWidth, height: 900))
+page.view.backgroundColor = .blue.withAlphaComponent(0.1)
+let attachment = NSTextAttachment(image: page.view.toImage)
+attachment.bounds = .init(origin: .zero, size: page.view.frame.size)
+return .init(attachment: attachment)
 """
         let size:CGFloat = 100
         let attributedString = NSAttributedString(string: text, attributes: [:])
